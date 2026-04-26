@@ -9,7 +9,7 @@
  */
 
 import { motion } from "motion/react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Code, Lightbulb, RefreshCw, Compass, Users, PhoneOff, BarChart3, Target, Zap, ShieldCheck, TrendingUp, Layout, FileSpreadsheet, Instagram, Megaphone, Share2, Globe, PenTool, Video, Star, Play, Quote, MessageSquare } from "lucide-react";
 
 export default function App() {
@@ -480,17 +480,6 @@ export default function App() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-indigo-500/10 blur-[120px] -mt-40 rounded-full" />
               
               <div className="relative z-10">
-                <motion.div 
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2 }}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-widest mb-8"
-                >
-                  <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
-                  Only 2 Slots Left For This Month
-                </motion.div>
-                
                 <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-none">
                   Ready to Build Your <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-white to-purple-400">Growth Engine?</span>
